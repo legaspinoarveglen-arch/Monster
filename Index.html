@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monster Energy | Unleash The Beast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Oswald', sans-serif; background-color: #000000; color: white; }
+        .monster-green { color: #95D600; }
+        .bg-monster-green { background-color: #95D600; }
+        .glow-green { text-shadow: 0 0 15px rgba(149, 214, 0, 0.7); }
+        .btn-hover:hover { box-shadow: 0 0 20px #95D600; transform: scale(1.05); transition: all 0.3s ease; }
+        .glass-card { background: rgba(26, 26, 26, 0.8); backdrop-filter: blur(10px); border: 1px solid #333; }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass-card border-none">
+        <div class="text-2xl font-bold tracking-tighter monster-green italic">MONSTER <span class="text-white">ENERGY</span></div>
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-bold">
+            <a href="#" class="hover:text-monster-green transition">Products</a>
+            <a href="#" class="hover:text-monster-green transition">Athletes</a>
+            <a href="#" class="hover:text-monster-green transition">Events</a>
+            <a href="#" class="hover:text-monster-green transition">Gaming</a>
+        </div>
+        <button class="bg-monster-green text-black px-6 py-2 rounded-full font-bold uppercase text-xs btn-hover">Shop Now</button>
+    </nav>
+
+    <section class="relative h-screen flex items-center justify-center text-center px-4">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-40"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-6xl md:text-9xl font-bold uppercase italic glow-green mb-4">Unleash <br>The Beast</h1>
+            <p class="text-lg md:text-2xl text-gray-300 mb-8 tracking-wide">Fuel your grind with the world's most extreme energy.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="bg-monster-green text-black px-10 py-4 rounded-sm font-bold uppercase text-lg btn-hover">Order Direct</button>
+                <button class="border-2 border-white px-10 py-4 rounded-sm font-bold uppercase text-lg hover:bg-white hover:text-black transition">Find Near Me</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-bold uppercase italic mb-12 border-l-4 border-monster-green pl-4">The Lineup</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-lg text-center group">
+                <div class="h-64 mb-6 flex justify-center items-center group-hover:scale-110 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1622543953495-473ee167c45d?q=80&w=1000&auto=format&fit=crop" alt="Monster Original" class="h-full object-contain">
+                </div>
+                <h3 class="text-2xl font-bold uppercase mb-2">Original Green</h3>
+                <p class="text-gray-400 mb-6 text-sm">The OG that started it all. Smooth, easy drinking flavor.</p>
+                <button class="w-full py-3 border border-monster-green monster-green font-bold uppercase hover:bg-monster-green hover:text-black transition">Add to Cart</button>
+            </div>
+
+            <div class="glass-card p-8 rounded-lg text-center group border-monster-green">
+                <div class="h-64 mb-6 flex justify-center items-center group-hover:scale-110 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1622543953495-473ee167c45d?q=80&w=1000&auto=format&fit=crop" alt="Monster Ultra" class="h-full object-contain brightness-150">
+                </div>
+                <h3 class="text-2xl font-bold uppercase mb-2">Ultra White</h3>
+                <p class="text-gray-400 mb-6 text-sm">Zero sugar, zero calories. All the buzz with a crisp taste.</p>
+                <button class="w-full py-3 bg-monster-green text-black font-bold uppercase btn-hover">Add to Cart</button>
+            </div>
+
+            <div class="glass-card p-8 rounded-lg text-center group">
+                <div class="h-64 mb-6 flex justify-center items-center group-hover:scale-110 transition duration-500">
+                    <img src="https://images.unsplash.com/photo-1622543953495-473ee167c45d?q=80&w=1000&auto=format&fit=crop" alt="Mango Loco" class="h-full object-contain hue-rotate-30">
+                </div>
+                <h3 class="text-2xl font-bold uppercase mb-2">Mango Loco</h3>
+                <p class="text-gray-400 mb-6 text-sm">A heavenly blend of exotic juices to get the party started.</p>
+                <button class="w-full py-3 border border-monster-green monster-green font-bold uppercase hover:bg-monster-green hover:text-black transition">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-[#0a0a0a] text-center px-6">
+        <div class="max-w-2xl mx-auto">
+            <i data-lucide="zap" class="mx-auto mb-6 monster-green w-12 h-12"></i>
+            <h2 class="text-4xl font-bold uppercase italic mb-4">Join The Army</h2>
+            <p class="text-gray-400 mb-8">Get exclusive access to event tickets, new flavor drops, and athlete gear.</p>
+            <form class="flex flex-col md:flex-row gap-2">
+                <input type="email" placeholder="Enter your email" class="flex-1 bg-black border border-gray-700 p-4 focus:border-monster-green outline-none text-white">
+                <button class="bg-monster-green text-black px-8 py-4 font-bold uppercase btn-hover">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-gray-900 px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+            <div class="text-gray-500 text-xs">© 2026 Monster Energy Company. All Rights Reserved.</div>
+            <div class="flex space-x-6">
+                <i data-lucide="instagram" class="w-5 h-5 cursor-pointer hover:text-monster-green"></i>
+                <i data-lucide="twitter" class="w-5 h-5 cursor-pointer hover:text-monster-green"></i>
+                <i data-lucide="facebook" class="w-5 h-5 cursor-pointer hover:text-monster-green"></i>
+                <i data-lucide="youtube" class="w-5 h-5 cursor-pointer hover:text-monster-green"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
